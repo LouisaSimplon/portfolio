@@ -11,17 +11,33 @@
  }
 
 /* donner un effet à mon titre*/
- #nom{
+ #nom {
    text-shadow: 0 1px 0 #eee,
                 0 2px 0 #e5e5e5,
                 -2px 5px 0 #b9b9b9,
                 -2px 7px 2px rgba(0,0,0, 0.6);
  }
 
+/*mettre un lien sur le nom */
+ #nom a, #nom a:visited{
+   text-decoration: none;
+   color:white;
+   transition: 1.5s;
+ }
+
+/*mettre un effet sur le nom losque l'on clic dessus*/
+ #nom a:hover {
+   border-bottom: 2px solid black;
+   padding-left: 5%;
+   padding-right: 5%;
+   color: rgb(12, 28, 55);
+ }
+
 /*gérer la taille du paragraphe*/
  header p{
    font-size: 17px;
-
+   color: white;
+   text-decoration: none;
  }
 
 /* création des futur boutons*/
@@ -36,7 +52,7 @@ nav {
   margin-right: 5%;
 }
 
-nav a, nav a:visited {/* lien bouton <a href> qu'il soit visité ou non */
+nav a, nav a:visited {/* lien bouton <a href> lorsqu'il est visité */
   text-align: center;
   text-decoration: none;
   font-family: cursive;
@@ -82,11 +98,9 @@ margin: 2% 42.5% 2% 42.5%;/*centrer mon image*/
 border-radius: 100%;
 background: rgb(124, 230, 122);
 box-shadow: 0 0 2px rgb(87, 94, 199);
-
-
 }
 
-/*gérer les image de mon footer*/
+/*gérer les images de mon footer*/
 #image{
   width:5%;
   margin: 2% 45% 2% 45%;/*centrer mon image*/
@@ -130,6 +144,7 @@ footer{
 #coca{
   width: 100%;
 }
+
 /* Commentaire pour tester GitHub */
 figure {
   width: 25%;
@@ -140,4 +155,8 @@ figure img{
   width: 100%;
   box-shadow: 2px 2px 2px black;/*petit effet ombré sur les images*/
   margin-top: 15%;
+}
+
+.page_active{
+  color: rgb(44, 62, 80);
 }
